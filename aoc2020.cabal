@@ -1,9 +1,5 @@
 cabal-version: 1.12
 
--- This file has been generated from package.yaml by hpack version 0.34.2.
---
--- see: https://github.com/sol/hpack
-
 name:           aoc2020
 version:        0.1.0.0
 description:    Please see the README on GitHub at <https://github.com/githubuser/aoc2020#readme>
@@ -25,13 +21,21 @@ source-repository head
 
 executable day01
   main-is: Day01.hs
-  other-modules:
-      Paths_aoc2020
-  hs-source-dirs:
-      src
+  hs-source-dirs: src
+  build-depends:
+      base >=4.7 && <5
+    , mtl
+    , containers
+    , unordered-containers
+  default-language: Haskell2010
+
+executable day02
+  main-is: Day02.hs
+  hs-source-dirs: src
   build-depends:
       base >=4.7 && <5
     , containers
+    , megaparsec
     , mtl
     , text
     , unordered-containers
