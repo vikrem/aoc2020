@@ -41,6 +41,18 @@ executable day02
     , unordered-containers
   default-language: Haskell2010
 
+executable day06
+  main-is: Day06.hs
+  hs-source-dirs: src
+  build-depends:
+      base >=4.7 && <5
+    , containers
+    , megaparsec
+    , mtl
+    , text
+    , unordered-containers
+  default-language: Haskell2010
+
 executable day07
   main-is: Day07.hs
   hs-source-dirs: src
